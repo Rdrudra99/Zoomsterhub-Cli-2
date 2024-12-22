@@ -10,8 +10,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Modern Design Tool Landing Page",
-    description: "Created with the help of Frontend Tribe",
+    title: "Zoomsterhub || Project 12",
+    description: "Created by Zoomsterhub",
+    openGraph: {
+        title: "Zoomsterhub || Project 12",
+        description: "Created by Zoomsterhub",
+        type: "website",
+        locale: "en_US",
+        url: "https://zoomsterhub.com",
+        images: [
+            {
+                url: "./opengraph-image..svg",
+                alt: "Zoomsterhub",
+            },
+        ],
+    },
+
 };
 
 export default function RootLayout({
