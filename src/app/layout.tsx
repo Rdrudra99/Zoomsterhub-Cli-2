@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         url: "https://zoomsterhub.com",
         images: [
             {
-                url: "./opengraph-image..svg",
+                url: "./opengraph-image.png",
                 alt: "Zoomsterhub",
             },
         ],
