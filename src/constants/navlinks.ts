@@ -4,5 +4,5 @@ export const navLinks = [
  { label: "Blog", href: "/resources/blog" },
  { label: "terms", href: "/terms" },
  { label: "privacy", href: "/privacy" },
- { label: "about", href: "/about" }
+ // { label: "about", href: "/about" }
 ];
