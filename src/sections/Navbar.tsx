@@ -6,12 +6,8 @@ import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
-const navLinks = [
-    { label: "Home", href: "#" },
-    { label: "Features", href: "#features" },
-    { label: "Integrations", href: "#integrations" },
-    { label: "FAQs", href: "#faqs" },
-];
+import { navLinks } from "@/constants/navlinks";
+
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,9 +21,9 @@ export default function Navbar() {
                                 <Image src={logoImage} alt="Logo" className="h-9 md:h-auto w-auto" />
                             </div>
                             <div className="lg:flex justify-center items-center hidden">
-                                <nav className="flex gap-6 font-medium">
+                                <nav className="flex gap-6 font-medium cursor-pointer">
                                     {navLinks.map((link) => (
-                                        <a key={link.label} href={link.href}>{link.label}</a>
+                                        <Link key={link.label} href={link.href}>{link.label}</Link>
                                     ))}
                                 </nav>
                             </div>
