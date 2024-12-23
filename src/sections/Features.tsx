@@ -1,84 +1,90 @@
-import Tag from '@/components/Tag';
-import { TerminalIcon as DigitalMedia, VideoIcon as PrePostProduction, CodeIcon as WebAppDev, TvIcon as OTTPlatform } from 'lucide-react';
-
+import FeatureCard from "@/components/FeatureCard";
+import Tag from "@/components/Tag";
+import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
+import avatar2 from "@/assets/images/avatar-lula-meyers.jpg";
+import avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
+import Avatar from "@/components/Avatar";
+import Image from "next/image";
+import Key from "@/components/Key";
 const features = [
-    {
-        icon: DigitalMedia,
-        title: "Digital Media Pro",
-        description:
-            "Boost your online presence with expert digital marketing, video production, and website development tailored to grow your brand.",
-    },
-    {
-        icon: PrePostProduction,
-        title: "Pre-Post Production",
-        description:
-            "Bring your ideas to life with seamless planning, scripting, editing, and visual effects, ensuring a polished final product.",
-    },
-    {
-        icon: WebAppDev,
-        title: "Web & App Development",
-        description:
-            "Create engaging websites and apps that combine design, functionality, and performance for modern business success.",
-    },
-    {
-        icon: OTTPlatform,
-        title: "OTT TV Platform",
-        description:
-            "Revolutionize streaming with on-demand content, personalized recommendations, and seamless multi-device accessibility.",
-    },
-    {
-        icon: DigitalMedia,
-        title: "Digital Media Pro",
-        description:
-            "Boost your online presence with expert digital marketing, video production, and website development tailored to grow your brand.",
-    },
-    {
-        icon: PrePostProduction,
-        title: "Pre-Post Production",
-        description:
-            "Bring your ideas to life with seamless planning, scripting, editing, and visual effects, ensuring a polished final product.",
-    },
-    {
-        icon: WebAppDev,
-        title: "Web & App Development",
-        description:
-            "Create engaging websites and apps that combine design, functionality, and performance for modern business success.",
-    },
-    {
-        icon: OTTPlatform,
-        title: "OTT TV Platform",
-        description:
-            "Revolutionize streaming with on-demand content, personalized recommendations, and seamless multi-device accessibility.",
-    },
+    "Asset Library",
+    "Code Preview",
+    "Flow Mode",
+    "Smart Sync",
+    "Auto Layout",
+    "Fast Search",
+    "Smart Guides",
 ];
 
-const FeatureCard = ({ icon: Icon, title, description }: any) => (
-    <div className="flex flex-col  py-10 relative group lg:border-b dark:border-neutral-800">
-        <div className="opacity-0 group-hover:opacity-100 transition duration-200 group absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-700 dark:from-neutral-900 to-transparent hover:from-neutral-600 dark:hover:from-neutral-800 hover:to-transparent pointer-events-none"></div>
-        <div className="mb-4 relative z-10 px-10">
-            <Icon size={24} />
-        </div>
-        <div className="text-lg font-bold mb-2 relative z-10 px-10">
-            <div className="absolute left-0 inset-y-0 h-6 w-1 rounded-tr-full rounded-br-full  dark:bg-neutral-700 group-hover:bg-blue-500 transition duration-200"></div>
-            <span className="group-hover:translate-x-2 transition duration-200 inline-block">{title}</span>
-        </div>
-        <p className="text-sm text-muted dark:text-muted-dark max-w-xs mx-auto relative z-10 px-10">
-            {description}
-        </p>
-    </div>
-);
-
-export default function FeaturesGrid() {
+export default function Features() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 relative z-10 py-10">
-            {features.map(({ icon, title, description }, index) => (
-                <FeatureCard
-                    key={index}
-                    icon={icon}
-                    title={title}
-                    description={description}
-                />
-            ))}
-        </div>
-    );
+        <section className="py-24">
+            <div className="container">
+                <div className="flex justify-center">
+                    <Tag>
+                        Features
+                    </Tag>
+                </div>
+                <h2 className="text-6xl font-medium text-center mt-6 max-w-2xl mx-auto">
+                    Where Power meets <span className="text-lime-400">Simplicity</span>
+                </h2>
+                <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-3  gap-8">
+                    <FeatureCard title="Real-time collaboration" description="Work together in real-time with your team, clients, or anyone else."
+                        className="md:col-span-2 lg:col-span-1"
+                    >
+                        <div className="aspect-video flex items-center justify-center">
+                            <Avatar className="z-40">
+                                <Image src={avatar1} alt="avatar1" className="rounded-full" />
+                            </Avatar>
+                            <Avatar className="-ml-6 border-indigo-500 z-30">
+                                <Image src={avatar2} alt="avatar2" className="rounded-full" />
+                            </Avatar>
+                            <Avatar className="-ml-6 border-amber-500 z-20">
+                                <Image src={avatar3} alt="avatar3" className="rounded-full" />
+                            </Avatar>
+                            <Avatar className="-ml-6 border-transparent">
+                                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                                    {
+                                        Array.from({ length: 3 }).map((_, index) => (
+                                            <span key={index} className="size-1.5 rounded-full bg-white inline-flex"></span>
+                                        ))
+                                    }
+                                </div>
+                            </Avatar>
+                        </div>
+                    </FeatureCard>
+                    <FeatureCard title="Interactive Prototyping" description="Engage your audience with interactive prototypes that can be shared with a link."
+                        className="md:col-span-2 lg:col-span-1"
+                    >
+                        <div className="aspect-video flex items-center justify-center">
+                            <p className="text-4xl font-extrabold text-white/20 text-center">we have achived{" "}
+                                <span className="bg-gradient-to-r from bg-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                    achived
+                                </span>{" "}
+                                customer satisfaction
+                            </p>
+                        </div>
+                    </FeatureCard>
+                    <FeatureCard title="Keyboard quick actions" description="Powerful commands to help you create designs more quickly."
+                        className="md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
+                    >
+                        <div className="aspect-video flex items-center justify-center gap-4">
+                            <Key className="w-28">shift</Key>
+                            <Key>alt</Key>
+                            <Key>C</Key>
+                        </div>
+                    </FeatureCard>
+                </div>
+                <div className="mt-8 flex flex-wrap gap-3 justify-center">
+                    {features.map((feature) => (
+                        <div key={feature} className="bg-neutral-900 border border-white/10 inline-flex px-3 md:px-5 md:py-2 py-1.5 rounded-2xl gap-3 items-center">
+                            <span className="bg-lime-400 text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">&#10038;</span>
+                            <span className="font-medium md:text-lg">{feature}</span>
+                        </div>
+                    ))
+                    }
+                </div>
+            </div>
+        </section>
+    )
 }

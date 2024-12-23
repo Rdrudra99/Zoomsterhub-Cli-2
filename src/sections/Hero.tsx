@@ -1,11 +1,8 @@
 import Button from "@/components/Button";
-import designExample1Image from '@/assets/images/design-example-1.png';
-import designExample2Image from '@/assets/images/design-example-2.png';
 import Pointers from "@/components/Pointer";
-import Image from "next/image";
-import { ChevronRight } from "lucide-react";
 import AnimatedGradientText from "@/components/ui/animated-gradient-text";
 import { cn } from "@/lib/utils";
+import { ChevronRight } from "lucide-react";
 export default function Hero() {
     return (
         <section className="py-24 overflow-x-clip">
