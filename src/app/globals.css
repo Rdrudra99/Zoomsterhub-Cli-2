@@ -68,3 +68,24 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Hide the scrollbar but allow scrolling for WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Allow scrolling on the body without a visible scrollbar */
+body {
+  overflow: auto; /* Enables scrolling */
+}
+
+/* Optional: You can also apply this to specific containers or elements */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+.scrollbar-hide {
+  overflow: auto; /* Enables scrolling but hides the scrollbar */
+}
+
+

@@ -37,8 +37,9 @@ export default function Navbar() {
                                 ><line x1="3" y1="12" x2="21" y2="12" className={twMerge("origin-left transition", isMenuOpen && "rotate-45 -translate-y-1")}></line><line x1="3" y1="6" x2="21" y2="6" className={twMerge("transition", isMenuOpen && "opacity-0")}></line><line x1="3" y1="18" x2="21" y2="18"
                                     className={twMerge("origin-left transition", isMenuOpen && "-rotate-45 translate-y-1")}
                                 ></line></svg>
-                                <Button variant="secondary" className="hidden md:inline-flex items-center">Sign In</Button>
-                                <Button variant="primary" className="hidden md:inline-flex items-center">Sign Up</Button>
+                                <Button variant="primary" className="hidden md:inline-flex items-center">
+                                    Contact Us
+                                </Button>
                             </div>
                         </div>
                         <AnimatePresence>
@@ -56,8 +57,9 @@ export default function Navbar() {
                                                     className=""
                                                 >{link.label}</Link>
                                             ))}
-                                        <Button variant="secondary">Sign In</Button>
-                                        <Button variant="primary">Sign Up</Button>
+                                        <Button variant="primary">
+                                            Contact Us
+                                        </Button>
                                     </div>
                                 </motion.div>
                             )}

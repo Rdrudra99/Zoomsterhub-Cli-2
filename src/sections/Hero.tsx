@@ -15,13 +15,13 @@ export default function Hero() {
                 </div>
                 <div className="absolute -right-64 -top-16 hidden lg:block">
                     <Image src={designExample2Image} alt="Design Example 2" />
-                </div>
-                <div className="absolute left-56 top-96 hidden lg:block">
-                    <Pointers name="Rdrudra99" />
-                </div>
-                <div className="absolute right-80 -top-4 hidden lg:block">
-                    <Pointers name="Rdrudra99" color="red" />
                 </div> */}
+                <div className="absolute left-56 top-96 hidden lg:block">
+                    <Pointers name="Business" />
+                </div>
+                <div className="absolute right-80 top-20 hidden lg:block">
+                    <Pointers name="entertainment" color="red" />
+                </div>
                 <div className="flex justify-center">
                     <AnimatedGradientText>
                         🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />{" "}
@@ -38,6 +38,7 @@ export default function Hero() {
                 <h1 className="text-6xl md:text-7xl lg:text-8xl font-medium text-center mt-6">
                     Zoomsterhub Create Showcase Grow
                 </h1>
+
                 <p className="text-center text-xl text-white/50 mt-8 max-w-2xl mx-auto">
                     Design tools shouldn&apos;t slow you down , Layers combines powerfull features with an intuitive that eeps you in your creative flow.
                 </p>
