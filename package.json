@@ -1,7 +1,8 @@
 {
-  "name": "design-tool-landing-page",
+  "name": "zoomsterhub",
   "version": "0.1.0",
   "private": true,
+  "author": "Rdrudra99",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
