@@ -1,116 +1,35 @@
-# ZoomsterHub
-
 <div align="center">
-  <img src="src/assets/images/logo.svg" alt="ZoomsterHub Logo" width="180" />
-  <h3>
-        Zoomsterhub 
-  </h3>
-  <p>A modern platform to elevate your digital presence</p>
+  <h1>ZoomsterHub</h1>
+  <p>Your all-in-one platform for digital presence management</p>
   
-  [![Demo](https://img.shields.io/badge/Demo-Visit%20Site-blue)](https://zoomsterhubdemo.vercel.app/)
-  [![GitHub](https://img.shields.io/badge/GitHub-Repository-green)](https://github.com/Rdrudra99/Zoomsterhub-Cli-2)
+  [![Live Demo](https://img.shields.io/badge/Demo-Live_Site-blue?style=for-the-badge&logo=vercel)](https://zoomsterhubdemo.vercel.app/)
+  [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/Rdrudra99/Zoomsterhub-Cli-2)
+  [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 </div>
 
-## ✨ Features
+## ✨ Key Features
 
-- **Link Management** - Create, showcase, and grow your online presence
-- **Beautiful UI** - Modern, responsive design with smooth animations
-- **Multi-platform Support** - Works across all devices and screen sizes
-- **Analytics Dashboard** - Track performance and gain insights
-- **Customizable Solutions** - Tailor the tools to fit your unique needs
-- **Integrated Workflow** - Seamless integration with popular platforms
+- **Smart Link Management** - Centralize and optimize your digital footprint
+- **Performance Analytics** - Real-time insights with beautiful dashboards
+- **Responsive Design** - Flawless experience across all devices
+- **Custom Branding** - Personalize with your colors, logos, and style
+- **Cross-Platform Integration** - Connect with your favorite tools
+- **Lightning Fast** - Built for speed with Next.js optimization
 
 ## 🚀 Live Demo
 
-Experience ZoomsterHub: [https://zoomsterhubdemo.vercel.app/](https://zoomsterhubdemo.vercel.app/)
+Experience ZoomsterHub in action:  
+👉 [https://zoomsterhubdemo.vercel.app/](https://zoomsterhubdemo.vercel.app/)
 
-## 🛠️ Tech Stack
+## 🛠️ Technology Stack
 
-- [Next.js](https://nextjs.org/) - React framework for production
-- [React](https://reactjs.org/) - Frontend library
-- [TypeScript](https://www.typescriptlang.org/) - Type-safe JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-- [Radix UI](https://www.radix-ui.com/) - Accessible UI components
+| Category        | Technology                          |
+|-----------------|-------------------------------------|
+| Framework       | [Next.js](https://nextjs.org/)      |
+| UI Library      | [React](https://reactjs.org/)       |
+| Styling         | [Tailwind CSS](https://tailwindcss.com/) |
+| Type Safety     | [TypeScript](https://www.typescriptlang.org/) |
+| Animations      | [Framer Motion](https://www.framer.com/motion/) |
+| UI Components   | [Radix UI](https://www.radix-ui.com/) |
 
-## 📦 Project Structure
-
-\`\`\`
-src/
-  ├── app/                # Next.js App Router
-  │   ├── (navigation)/   # Navigation-related pages
-  │   └── page.tsx        # Home page
-  ├── assets/             # Images and static assets
-  ├── components/         # Reusable UI components
-  ├── constants/          # Navigation links and data
-  ├── lib/                # Utilities and helpers
-  ├── sections/           # Page sections (Hero, Features, etc.)
-  └── utils/              # Utility functions
-\`\`\`
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js 18.x or higher
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-\`\`\`bash
-git clone https://github.com/Rdrudra99/Zoomsterhub-Cli-2.git
-cd Zoomsterhub-Cli-2
-\`\`\`
-
-2. Install dependencies:
-\`\`\`bash
-npm install
-# or
-yarn install
-\`\`\`
-
-3. Start the development server:
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
-
-4. Open [http://localhost:3000](http://localhost:3000) to view the application in your browser
-
-## 📝 Available Scripts
-
-- \`npm run dev\` - Run development server
-- \`npm run build\` - Build for production
-- \`npm run start\` - Start production server
-- \`npm run lint\` - Run linting
-
-## 🌐 Deployment
-
-This project is deployed on [Vercel](https://vercel.com/), the platform built by the creators of Next.js.
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-1. Fork the repository
-2. Create your feature branch (\`git checkout -b feature/amazing-feature\`)
-3. Commit your changes (\`git commit -m 'Add some amazing feature'\`)
-4. Push to the branch (\`git push origin feature/amazing-feature\`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📞 Contact
-
-Project Link: [https://github.com/Rdrudra99/Zoomsterhub-Cli-2](https://github.com/Rdrudra99/Zoomsterhub-Cli-2)
-
----
-
-<div align="center">
-  <p>Built with ❤️ for a better link management experience</p>
-  <p>© 2025 Rdrudra99</p>
-</div>
+## 🏗️ Project Architecture
